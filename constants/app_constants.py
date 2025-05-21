@@ -21,16 +21,6 @@ ZONE_OUT_POLYGONS = [
 ZONE_IN_NAMES = ["In1", "In2", "In3", "In4"]
 ZONE_OUT_NAMES = ["Out1", "Out2", "Out3", "Out4"]
 
-def get_color_for_turn(tracker_id, vehicle_turns):
-    turn = vehicle_turns.get(tracker_id)
-    if turn == "right_turn":
-        return sv.Color.RED
-    elif turn == "left_turn":
-        return sv.Color.GREEN
-    elif turn == "u_turn":
-        return sv.Color.BLACK
-    else:
-        return sv.Color.BLUE
 
 TURN_MAPPING = {
     "In1": {"Out2": "right_turn", "Out4": "left_turn", "Out3": "straight", "Out1": "u_turn"},
