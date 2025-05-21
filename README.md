@@ -43,7 +43,7 @@ This project is designed to detect, track, and analyze vehicle turns (left, righ
 2. Install dependencies
 
 ```
-!pip install -r requirement.txt
+!pip install -r /content/grootan_ai_task/requirement.txt
 ```
 2. Run UI Gradio
 
