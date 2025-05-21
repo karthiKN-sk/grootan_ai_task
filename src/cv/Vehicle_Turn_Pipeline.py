@@ -6,8 +6,8 @@ from rich.progress import Progress
 import supervision as sv
 from ultralytics import YOLO
 from constants.app_constants import ZONE_IN_NAMES,ZONE_IN_POLYGONS,ZONE_OUT_NAMES,ZONE_OUT_POLYGONS,COLORS
-from cv.Draw_Polygon import initiate_polygon_zones,compute_centroid
-from cv.Detection_State_Tracker import DetectionStateTracker
+from src.cv.Draw_Polygon import initiate_polygon_zones,compute_centroid
+from src.cv.Detection_State_Tracker import DetectionStateTracker
 
 class VehicleTurnPipeline:
     def __init__(
