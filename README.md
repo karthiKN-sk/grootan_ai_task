@@ -15,15 +15,9 @@ This project is designed to detect, track, and analyze vehicle turns (left, righ
 ├── main.py                                              # Main entry point (Start UI)
 ├── src/  
 │     └── cv/
-│     │    ├── add_final_summary_to_video.py             # Frame and video processing logic
-│     │    ├── analysis_turn.py                          # Post-processing turn analysis
-│     │    ├── annotate_video_frame.py                   # Annotate Video Frames with Zone Information and Vehicle Turn Statistics
-│     │    ├── draw_polygen.py                           # Helper functions (centroid, zone initiation)
-│     │    ├── global_state.py                           # Global Detection State and Vehicle Entry-Exit Tracking and Turn Classification Logic
-│     │    ├── process_video_frame.py                    # Process and Annotate Video Frame for Vehicle Turn Detection
-│     │    ├── run_pipline.py                            # Full Video-Based Vehicle Turn Detection and Summary Pipeline
-│     │    ├── setup_video_processer.py                  # Setup Configuration for Vehicle Turn Detection Pipeline.
-│     │    └── video_process.py                          # Process and Annotate Video Frames for Vehicle Turn Detection
+│     │    ├── Detection_State_Tracker.py                # Global Detection State and Vehicle Entry-Exit Tracking and Turn Classification Logic
+│     │    ├── Draw_Polygen.py                           # Helper functions (centroid, zone initiation).
+│     │    └── Vehicle_Turn_Pipeline.py                  # Full Video-Based Vehicle Turn Detection and Pipeline for Vehicle Turn Detection
 │     │ 
 │     └── llm/
 │          └── user_query_handling.py                    # Vehicle Turn Detection Summary & AI-Powered Question Answering.
@@ -43,7 +37,7 @@ This project is designed to detect, track, and analyze vehicle turns (left, righ
 1. Git Clone from Branch 
 
 ```
-!git clone -b local_code_branch  https://github.com/karthiKN-sk/grootan_ai_task.git
+!git clone -b Class_Code_branch  https://github.com/karthiKN-sk/grootan_ai_task.git
 ```
 
 2. Install dependencies
