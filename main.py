@@ -89,7 +89,7 @@ def encode_to_browser_safe_mp4(input_path: str, output_path: str):
         print("Error: ffmpeg failed to convert video to browser-safe format.")
 
 if __name__ == "__main__":
-    demo.launch(debug=True)
+    demo.launch(share=True)
 
 
 
